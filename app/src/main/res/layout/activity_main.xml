@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#010024"
+    android:orientation="vertical"
+    tools:context="com.example.android.planet.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/img"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_weight="6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planet Co. Working Space"
+        android:textColor="#ffde00"
+        android:fontFamily="sans-serif-light"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/info"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location"
+            android:text="8 Tiba St. Camp César, Alexandria"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/location"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_toRightOf="@+id/phone"
+            android:text="01000132709 "
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/phone"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/hours" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_toRightOf="@+id/clock"
+            android:text="10:00AM - 11:00PM"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
